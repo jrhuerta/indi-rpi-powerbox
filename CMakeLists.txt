@@ -9,8 +9,6 @@ find_package(INDI REQUIRED)
 find_package(Nova REQUIRED)
 find_package(ZLIB REQUIRED)
 find_package(GSL REQUIRED)
-# find_package(Threads REQUIRED)
-# find_package(RT REQUIRED)
 
 set(CDRIVER_VERSION_MAJOR 1)
 set(CDRIVER_VERSION_MINOR 2)
@@ -32,10 +30,11 @@ include_directories(${EV_INCLUDE_DIR})
 
 include(CMakeCommon)
 
-set(INDI_RPI_PB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/rpi_powerbox.cpp)
-# set(GPIO_LIBRARIES "pigpiod_if2.so")
+# file(GLOB SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
+set(SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/rpi_powerbox.cpp)
+set(GPIO_LIBRARIES "pigpiod_if2.so")
 
-add_executable(indi_rpi_pb ${INDI_RPI_PB_SRC})
+add_executable(indi_rpi_pb ${SOURCES})
 
 # and link it to these libraries
 target_link_libraries(
@@ -43,7 +42,7 @@ target_link_libraries(
     ${INDI_LIBRARIES}
     ${NOVA_LIBRARIES}
     ${GSL_LIBRARIES}
-    # ${GPIO_LIBRARIES}
+    ${GPIO_LIBRARIES}
 
 )
 
