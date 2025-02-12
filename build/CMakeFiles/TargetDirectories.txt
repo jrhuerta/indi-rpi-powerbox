@@ -1,7 +1,0 @@
-/home/jrhuerta/Code/indi-rpi-power/build/CMakeFiles/indi_rpi_pb.dir
-/home/jrhuerta/Code/indi-rpi-power/build/CMakeFiles/edit_cache.dir
-/home/jrhuerta/Code/indi-rpi-power/build/CMakeFiles/rebuild_cache.dir
-/home/jrhuerta/Code/indi-rpi-power/build/CMakeFiles/list_install_components.dir
-/home/jrhuerta/Code/indi-rpi-power/build/CMakeFiles/install.dir
-/home/jrhuerta/Code/indi-rpi-power/build/CMakeFiles/install/local.dir
-/home/jrhuerta/Code/indi-rpi-power/build/CMakeFiles/install/strip.dir

@@ -1,1 +1,0 @@
-/bin/c++  -D_FORTIFY_SOURCE=2 -Wa,--noexecstack  -Wall -Wextra -Wno-format-truncation -g -g   -Wl,-z,nodump -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now  CMakeFiles/indi_rpi_pb.dir/rpi_powerbox.cpp.o -o indi_rpi_pb  /usr/lib/x86_64-linux-gnu/libindidriver.so /usr/lib/x86_64-linux-gnu/libindiAlignmentDriver.so 
